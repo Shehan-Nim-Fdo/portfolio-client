@@ -1,0 +1,128 @@
+.admin-login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--off-white);
+    padding: 2rem;
+}
+
+.admin-login-card {
+    background-color: var(--white);
+    padding: 3.5rem 3rem;
+    width: 100%;
+    max-width: 440px;
+    border: 1.5px solid var(--black);
+    border-radius: 16px;
+    box-shadow: 6px 6px 0px 0px var(--black);
+}
+
+.admin-login-title {
+    font-size: 1.85rem;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.admin-login-subtitle {
+    font-size: 0.9rem;
+    color: var(--grey);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.admin-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 700;
+    color: var(--black);
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input {
+    padding: 0.8rem 1.1rem;
+    border: 1.5px solid var(--black);
+    border-radius: 4px;
+    font-size: 0.95rem;
+    transition: all var(--transition);
+    background-color: var(--white);
+    color: var(--black);
+    outline: none;
+    font-family: var(--font);
+}
+
+.form-group input:focus {
+    border-color: var(--green);
+    background-color: var(--green-pale);
+}
+
+.error-message {
+    background-color: #fdecea;
+    color: #b71c1c;
+    padding: 0.75rem 1.1rem;
+    font-size: 0.88rem;
+    border: 1.5px solid #b71c1c;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.login-button {
+    padding: 0.95rem;
+    background-color: var(--green);
+    color: var(--white);
+    border: 1.5px solid var(--green);
+    border-radius: 4px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition);
+    font-family: var(--font);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.login-button:hover:not(:disabled) {
+    background-color: var(--green-light);
+    color: var(--black);
+    border-color: var(--green-light);
+}
+
+.login-button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.back-button {
+    margin-top: 0.75rem;
+    padding: 0.8rem;
+    background-color: transparent;
+    color: var(--black);
+    border: 1.5px solid var(--black);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition);
+    width: 100%;
+    font-family: var(--font);
+}
+
+.back-button:hover {
+    background-color: var(--green-pale);
+    color: var(--green);
+    border-color: var(--green);
+}
