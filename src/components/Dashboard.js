@@ -19,9 +19,9 @@ const Dashboard = () => {
     const fetchData = async () => {
         try {
             const [profileRes, statusRes, analyticsRes] = await Promise.all([
-                axios.get(`${API_URL}api/profile`),
-                axios.get(`${API_URL}api/status`),
-                axios.get(`${API_URL}api/analytics/dashboard`)
+                axios.get(`${API_URL}/api/profile`),
+                axios.get(`${API_URL}/api/status`),
+                axios.get(`${API_URL}/api/analytics/dashboard`)
             ]);
             setProfile(profileRes.data);
             setStatus(statusRes.data);
